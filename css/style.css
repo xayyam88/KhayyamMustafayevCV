@@ -1770,6 +1770,12 @@ textarea:focus {
     background-position: top;
     background-size: cover;
 }
+.portfolio-wrapper .box.box8{
+    background: url(../images/renoshopebee2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
 
 .portfolio-wrapper .box:hover {
     background-position: bottom;
@@ -1792,6 +1798,7 @@ textarea:focus {
     color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .portfolio-wrapper .box .detalis .content p{
     font-size: 18px;
@@ -1818,6 +1825,18 @@ textarea:focus {
 .portfolio-wrapper .modal-body{
     display: flex;
 }
+
+@media (max-width: 960px) {
+    .portfolio-wrapper .modal-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio-wrapper .modal-body .box{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .portfolio-wrapper .modal-body .box{
     width: 400px;
     height: 370px;
@@ -1827,10 +1846,23 @@ textarea:focus {
     cursor: auto;
     transition: ease-in-out 8s;
 }
+@media (max-width: 960px) {
+    .portfolio-wrapper .modal-body .box{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .site-description{
     margin-top: 5px;
     margin-bottom: 25px;
     width: 400px;
+}
+@media (max-width: 960px) {
+    .site-description{
+        width: 100%;
+        padding: 15px;
+    }
 }
 .site-description h2{
     margin-bottom: -5px;
